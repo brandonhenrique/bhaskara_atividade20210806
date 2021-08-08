@@ -1,12 +1,35 @@
 <?php
     
-    
+    include('funcoes.php');
     
     $a = $_POST['txta'];
     $b = $_POST['txtb'];
     $c = $_POST['txtc'];
 
-   
+    $valores_a = array();
+    $valores_b = array();
+    $valores_c = array();
+
+   for ($i= -10; $i < 10; $i++) { 
+       $valores_a[] = $i;
+       $valores_b[] = $i;
+       $valores_c[] = $i;
+   }
+
+   $resultados = array();
+
+
+   foreach ($valores_a as $chave_a => $valor_a) {
+    foreach ($valores_b as $chave_b => $valor_b) {
+      foreach ($valores_c as $chave_c => $valor_c) {
+       // $resultado_temp = calc_bhaskara($valor_a, $valor_b, $valor_c);
+        if($resultado_temp != NULL && $resultado_temp['x1'] != NULL && $resultado_temp['x2'] != NULL){
+        $resultados[] = $resultado_temp;
+      }
+      }
+    }
+  }
+
     
 ?>
 
