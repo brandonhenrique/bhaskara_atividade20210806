@@ -15,19 +15,38 @@
         <Label> Calculo da Forma de Bhaskara!!!</Label>
         <br>
         <br>
-        <form method="POST" action="calcular.php">
+        <form method="POST" action="bhaskara.php">
             <div class="mb-3">
                 <label for="a" class="form-label">Valor de A:</label>
                 <input type="a" class="form-control" id="txta" name="txta">
             </div>
+
+            <div class="mb-3">
+                <label for="a_fim" class="form-label">2° valor de A:</label>
+                <input type="a_fim" class="form-control" id="txta_fim" name="txta_fim">
+            </div>
+
+
             <div class="mb-3">
                 <label for="b" class="form-label">Valor de B:</label>
                 <input type="b" class="form-control" id="txtb" name="txtb">
             </div>
+
+            <div class="mb-3">
+                <label for="b_fim" class="form-label">2° valor de B:</label>
+                <input type="b_fim" class="form-control" id="txtb_fim" name="txtb_fim">
+            </div>
+
             <div class="mb-3">
                 <label for="c" class="form-label">Valor de C:</label>
                 <input type="c" class="form-control" id="txtc" name="txtc">
             </div>
+
+            <div class="mb-3">
+                <label for="c_fim" class="form-label">2° valor de C:</label>
+                <input type="c_fim" class="form-control" id="txtc_fim" name="txtc_fim">
+            </div>
+
             <button type="submit" class="btn btn-primary">Calcular</button>
 
         </form>
