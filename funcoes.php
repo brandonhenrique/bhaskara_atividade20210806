@@ -61,10 +61,10 @@
     }
 
     function connect_and_write_db($a_vlr, $b_vlr, $c_vlr, $delta, $x1, $x2){
-        $conn = mysqli_connect('localhost', 'root', '', 'formula_bhaskara');
+
         $query = get_insert_sql($a_vlr, $b_vlr, $c_vlr, $delta, $x1, $x2);
-        $result = mysqli_query($conn, $query);
-        return $result;
+        $resultado = mysqli_query(mysqli_connect('localhost', 'root', '', 'bhaskara'), $query);
+        return $resultado;
     }
 
 ?>
